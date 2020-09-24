@@ -1,5 +1,5 @@
-let num = 2000;
-let noiseScale = 300, noiseStrength = 1;
+let num = 4000;
+let noiseScale = 400, noiseStrength = 1;
 let particles = [num];
 let x;
 let y;
@@ -52,7 +52,7 @@ class Particle {
         this.dir.y = sin(angle);
         var vel = this.dir.copy();
         var d = 1;  //direction change
-        vel.mult(this.speed * handY / 10); //vel = vel * (speed*d)
+        vel.mult(this.speed * handY / 12); //vel = vel * (speed*d)
         this.loc.add(vel); //loc = loc + vel
     }
 
@@ -61,7 +61,7 @@ class Particle {
         //if (distance>150) {
         if (this.loc.x < 0 || this.loc.x > width || this.loc.y < 0 || this.loc.y > height) {
             this.loc.x = random(width * handX / 20);
-            this.loc.y = random(height * handY / 20);
+            this.loc.y = random(height * handY / 10);
         }
     }
 
