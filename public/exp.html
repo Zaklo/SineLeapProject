@@ -6,7 +6,10 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="public/assets/style.css">
-    <style>html,body{margin: 0; overflow: hidden}</style>
+    <style>html, body {
+        margin: 0;
+        overflow: hidden
+    }</style>
     <title>Projet JS</title>
 </head>
 <body data-barba="wrapper">
@@ -14,7 +17,7 @@
     <div class="loading-screen"></div>
 </div>
 
-<div data-barba="container">
+<div data-barba="container" data-barber-namespace="expe">
 
 </div>
 
@@ -26,4 +29,57 @@
 <script src="https://cdn.jsdelivr.net/npm/p5@1.1.9/lib/p5.js"></script>
 <script src="src/timelines.js"></script>
 <script src="src/main.js"></script>
+<script>
+    let d = new Date();
+    d = "" + d.getDate() + d.getMonth() + d.getFullYear() + d.getHours() + d.getMinutes();
+    let played = false;
+
+    Leap.loop(function (frame) {
+        if (frame.hands.length > 0) {
+            let hand = frame.hands[0];
+            let position = hand.palmPosition;
+            let velocity = hand.palmVelocity;
+            let direction = hand.direction;
+
+            var extendedFingers = 0;
+            for (let f = 0; f < hand.fingers.length; f++) {
+                let finger = hand.fingers[f];
+                if (finger.extended) extendedFingers++;
+            }
+
+            if (extendedFingers == 0) {
+                if (!played) {
+                    (() => {
+                        const canvas = document.querySelector('canvas')
+                        canvas.toBlob(
+                            (blob) => {
+
+                                let file = canvas.toDataURL()
+                                let title = 'screenshot' + d;
+
+                                const formData = new FormData()
+                                formData.append('title', title)
+                                formData.append('experiment', blob, 'photo.jpg')
+
+                                fetch('/experiment', {
+                                    method: 'POST',
+                                    body: formData,
+                                }).then(res => console.log(res.text()))
+
+                            },
+                            'image/jpeg',
+                            0.95,
+                        )
+                    })()
+                    played = !played;
+                }
+            }
+            setTimeout(() => {
+                played = !played;
+            }, 20000)
+        }
+    });
+
+
+</script>
 </html>

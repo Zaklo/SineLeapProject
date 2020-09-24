@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/03_sequelize.iml" filepath="$PROJECT_DIR$/.idea/03_sequelize.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../SineLeapProject/.idea/03_sequelize.iml" filepath="$PROJECT_DIR$/../SineLeapProject/.idea/03_sequelize.iml" />
     </modules>
   </component>
 </project>

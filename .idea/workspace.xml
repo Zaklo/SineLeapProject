@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17e16f07-3a2a-43b3-9c44-2d46ddb084dc" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/database.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/exp.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/exp.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,7 +16,7 @@
     <execution />
   </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/../SineLeapProject" />
   </component>
   <component name="ProjectId" id="1hwwGxh2hAsZpqcho5ZNOeHnIv0" />
   <component name="ProjectViewState">
@@ -43,11 +46,21 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600935370799</updated>
-      <workItem from="1600935372010" duration="722000" />
+      <workItem from="1600935372010" duration="3516000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="516" y="369" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1600938514590">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state x="516" y="369" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1792.1120@0.0.1792.1120" timestamp="1600938514590" />
+    <state width="242" height="463" key="HiddenNamespacesPopup" timestamp="1600938606162">
+      <screen x="0" y="0" width="1792" height="1120" />
+    </state>
+    <state width="242" height="463" key="HiddenNamespacesPopup/0.0.1792.1120@0.0.1792.1120" timestamp="1600938606162" />
   </component>
 </project>
