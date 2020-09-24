@@ -2,14 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="17e16f07-3a2a-43b3-9c44-2d46ddb084dc" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/public/assets/Lalezar-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/style.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/assets/testaudio.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/exp.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/src/main.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/src/timelines.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/readme.md" beforeDir="false" afterPath="$PROJECT_DIR$/readme.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,7 +43,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1600935370799</updated>
-      <workItem from="1600935372010" duration="383000" />
+      <workItem from="1600935372010" duration="722000" />
     </task>
     <servers />
   </component>
