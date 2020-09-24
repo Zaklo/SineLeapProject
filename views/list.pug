@@ -1,11 +1,11 @@
 extends layout
 
 block content
-  a(href="/experiment/new") create
+  a(href="/experiment/new") créer
   ul
     each experiment in experiments
       li= experiment.title
-        a(href=`/experiment/${experiment.id}`) view the experiment
+        a(href=`/experiment/${experiment.id}`) voir le screenshot
     else
       li There are no experiment
-        
+
