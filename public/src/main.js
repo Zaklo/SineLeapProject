@@ -128,6 +128,6 @@ rangeL.style.width = '100%'
 
 window.onload = function () {
   const audio = new Audio('assets/testaudio.mp3');
-  audio.volume = 0.5;
+  audio.volume = 0.8;
   audio.play();
 }
